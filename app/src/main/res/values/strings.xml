@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">La Ruleta de la Fortuna</string>
+    <string name="cuantosJugadores">¿Cuantos jugadores que van a jugar?</string>
+</resources>
