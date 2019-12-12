@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/ConstraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/TextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="70dp"
+        android:layout_weight="1"
+        android:gravity="center|center_horizontal"
+        android:textColor="@color/colorAccent"
+        android:textSize="36sp" />
+
+    <TextView
+        android:id="@+id/twPuntuacion"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center|center_horizontal"
+        android:layout_weight="1"
+        android:gravity="center|center_horizontal"
+        android:text="200 ϟ"
+        android:textColor="@color/md_amber_A700"
+        android:textSize="32sp" />
+
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center|center_horizontal"
+        android:text="Letra pulsada"
+        android:textColor="@color/colorAccent" />
+
+    <Button
+        android:id="@+id/button_resolver"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_weight="1"
+        android:onClick="onResolverClicked"
+        android:text="Resolver"
+        android:textColor="@color/md_pink_400" />
+
+    <HorizontalScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="10sp"
+        android:layout_weight="5"
+        android:scrollbars="none">
+
+        <GridLayout
+            android:id="@+id/GridTeclado"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_gravity="center|center_horizontal|center_vertical"
+            android:columnCount="4"
+            android:orientation="horizontal"
+            android:rowCount="7">
+
+        </GridLayout>
+    </HorizontalScrollView>
+
+</LinearLayout>
