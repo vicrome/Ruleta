@@ -21,18 +21,13 @@
         android:id="@+id/radioGroup"
         android:layout_width="168dp"
         android:layout_height="129dp"
-        android:checkedButton="@id/radioButton1jugador"
+        android:checkedButton="@id/radioButton2jugadores"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.576"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/textView"
-        app:layout_constraintVertical_bias="0.195">
-
-        <RadioButton
-            android:id="@+id/radioButton1jugador"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:text="1 Jugador" />
+        app:layout_constraintVertical_bias="0.174">
 
         <RadioButton
             android:id="@+id/radioButton2jugadores"

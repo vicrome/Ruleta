@@ -29,6 +29,8 @@ public class actividadJugar_Tablero extends AppCompatActivity {
     TextView prueba;
     TextView TW;
     String[] HuecosPalabra;
+    String[] FraseResuelta;
+    boolean resolviendo = false;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -67,15 +69,32 @@ public class actividadJugar_Tablero extends AppCompatActivity {
                 @Override
                 public void onClick(View v) {
                     Button btn = (Button) v;
-                    btn.setEnabled(false);
                     char a = btn.getText().charAt(0);
-                    for (int i = 0; i < FrasePrueba.length(); i++) {
-                        if (FrasePrueba.charAt(i) == a) {
-                            HuecosPalabra[i] = a+"";
+                    if (resolviendo){
+                        FraseResuelta = HuecosPalabra; // estan las _ y los " ".
+                        for (int i = 0; i < FrasePrueba.length(); i++) {
+                            if (FraseResuelta[i] == "_") {
+                                FraseResuelta[i] = a + "";
+                                break;
+                            }
                         }
+                        TW.setText(arrayToString(FraseResuelta));
+                        prueba.setText("" + a);
+                        /*
+                        Hacemos una copia,  y mostramos la copia,  entonces reemplazados cada_ con la siguiente letra que meta
+                        Cuando haya metido todas las letras se compara con la solucion
+                        Si es errónea pues se dice que falla y pierde turno
+                                                 */
+                    }else {
+                        btn.setEnabled(false);
+                        for (int i = 0; i < FrasePrueba.length(); i++) {
+                            if (FrasePrueba.charAt(i) == a) {
+                                HuecosPalabra[i] = a + "";
+                            }
+                        }
+                        TW.setText(arrayToString(HuecosPalabra));
+                        prueba.setText("" + a);
                     }
-                    TW.setText(arrayToString(HuecosPalabra));
-                    prueba.setText(""+a);
             }
         });
         GridTeclado.addView(botonesLetras[i]);
@@ -107,6 +126,12 @@ public class actividadJugar_Tablero extends AppCompatActivity {
 
     public void onResolverClicked(View view) {
         prueba.setText("Resolver");
+        if(resolviendo){
+            // ha ganado la ronda
+            // o ha perdido -> pierde turno
+        }else {
+            resolviendo = true;
+        }
         // boolean resolviendo; y en los botones si esta resolviendo que vaya por orden y si acierta guay y sino se resetea a lo nuevo
     }
 }

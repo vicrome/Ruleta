@@ -39,6 +39,7 @@ public class actividadJugar extends AppCompatActivity {
     int[] aturno;
     int contador;
     int turno;
+    double porcion = 0.083;
     GradientDrawable gd;
     androidx.constraintlayout.widget.ConstraintLayout ly;
 
@@ -75,17 +76,41 @@ public class actividadJugar extends AppCompatActivity {
 
         final double rndm = Math.random(); // Rndm que nos dice donde cae
 
-        if (rndm <= 0.25) {
-            resultado = "Has caido en : 10";
+        if (rndm <= porcion) {
+            resultado = "Has caido en : 25";
         }
-        if (0.5 > rndm && rndm > 0.25) {
-            resultado = "Has caido en : 40";
+        if (2*porcion > rndm && rndm > porcion) {
+            resultado = "Has caido en : 50";
         }
-        if (0.5 < rndm && rndm < 0.75) {
-            resultado = "Has caido en : 20";
+        if (3*porcion > rndm && rndm > 2*porcion) {
+            resultado = "Has caido en : 200";
         }
-        if (rndm > 0.75) {
-            resultado = "Has caido en : 30";
+        if (4*porcion > rndm && rndm > 3*porcion) {
+            resultado = "Ohh..Pierdes el turno :/";
+        }
+        if (5*porcion > rndm && rndm > 4*porcion) {
+            resultado = "Has caido en : 100";
+        }
+        if (6*porcion > rndm && rndm > 5*porcion) {
+            resultado = "Has caido en : 75";
+        }
+        if (7*porcion > rndm && rndm > 6*porcion) {
+            resultado = "Has ganado un COMODIN!";
+        }
+        if (8*porcion > rndm && rndm > 7*porcion) {
+            resultado = "Has caido en : 50";
+        }
+        if (9*porcion > rndm && rndm > 8*porcion) {
+            resultado = "Has caido en : 200";
+        }
+        if (10*porcion > rndm && rndm > 9*porcion) {
+            resultado = "Has caido en Quiebra";
+        }
+        if (11*porcion > rndm && rndm > 10*porcion) {
+            resultado = "Has caido en : 100";
+        }
+        if (12*porcion > rndm && rndm > 11*porcion) {
+            resultado = "Has caido en : 75";
         }
 
         r = new RotateAnimation(ROTATE_FROM, (float) ((rndm + MIN_VUELTAS) * VUELTA), Animation.RELATIVE_TO_SELF, 0.5f, Animation.RELATIVE_TO_SELF, 0.5f);
