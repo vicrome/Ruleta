@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewJugar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:onClick="jugar"
+        android:text="Jugar"
+        android:textColor="@color/md_amber_A700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.345" />
+
+    <TextView
+        android:id="@+id/textViewConfiguracion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="configuracion"
+        android:text="Configuracion"
+        android:textColor="@color/md_amber_A700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJugar"
+        app:layout_constraintHorizontal_bias="0.518"
+        app:layout_constraintStart_toStartOf="@+id/textViewJugar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewJugar"
+        app:layout_constraintVertical_bias="0.017" />
+
+    <TextView
+        android:id="@+id/textViewInformacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:onClick="informacion"
+        android:text="Informacion"
+        android:textColor="@color/md_amber_A700"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="@+id/textViewConfiguracion"
+        app:layout_constraintStart_toStartOf="@+id/textViewConfiguracion"
+        app:layout_constraintTop_toBottomOf="@+id/textViewConfiguracion"
+        app:layout_constraintVertical_bias="0.011" />
+
+    <TextView
+        android:id="@+id/prueba"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TextView"
+        android:textColor="@color/colorAccent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.941" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="133dp"
+        android:layout_height="145dp"
+        app:layout_constraintBottom_toTopOf="@+id/textViewJugar"
+        app:layout_constraintEnd_toEndOf="@+id/textViewJugar"
+        app:layout_constraintStart_toStartOf="@+id/textViewJugar"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_roulette" />
+</androidx.constraintlayout.widget.ConstraintLayout>

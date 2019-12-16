@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="teclado_ES">
+        <item >A</item>
+        <item >B</item>
+        <item >C</item>
+        <item >D</item>
+        <item >E</item>
+        <item >F</item>
+        <item >G</item>
+        <item >H</item>
+        <item >I</item>
+        <item >J</item>
+        <item >K</item>
+        <item >L</item>
+        <item >M</item>
+        <item >N</item>
+        <item >Ñ</item>
+        <item >O</item>
+        <item >P</item>
+        <item >Q</item>
+        <item >R</item>
+        <item >S</item>
+        <item >T</item>
+        <item >U</item>
+        <item >V</item>
+        <item >W</item>
+        <item >X</item>
+        <item >Y</item>
+        <item >Z</item>
+    </string-array>
+    <string-array name="spinner_jugadores">
+        <item>2 jugadores</item>
+        <item>3 jugadores</item>
+        <item>4 jugadores</item>
+    </string-array>
+    <array name="avatares">
+        <item>@drawable/av1</item>
+        <item>@drawable/av2</item>
+        <item>@drawable/av3</item>
+        <item>@drawable/av4</item>
+        <item>@drawable/av5</item>
+        <item>@drawable/av6</item>
+        <item>@drawable/av7</item>
+        <item>@drawable/av8</item>
+        <item>@drawable/av9</item>
+    </array>
+</resources>
