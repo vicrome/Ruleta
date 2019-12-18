@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import android.app.Activity;
 import android.content.Context;
 import android.content.Intent;
+import android.content.res.Resources;
 import android.os.Bundle;
 import android.util.Log;
 import android.view.View;
@@ -40,6 +41,23 @@ public class MainActivity extends AppCompatActivity {
         if (s != null) {
             prueba.setText(s.toString()); // Cuando empieza esta como null asique necesitamos la lista en otro lado
         }
+
+        Resources res = getResources();
+        String[] frases = res.getStringArray(R.array.frases);
+        String[] pistas = res.getStringArray(R.array.pistas);
+
+        String[] frases1 = new String[5];
+        String[] pistas1 = new String[5];
+        for (int i = 0; i < 5; i++) {
+            int aleatorio = (int) Math.floor(Math.random() * frases.length);
+            if(repetido(frases1, frases[aleatorio]) == false){
+                frases1[i] = frases[aleatorio].toUpperCase();
+            }
+            pistas1[i] = pistas[aleatorio].toUpperCase();
+        }
+        at.setPreguntas(frases1);
+        at.setPistas(pistas1);
+
     }
 
     @Override
@@ -81,6 +99,17 @@ public class MainActivity extends AppCompatActivity {
         //startActivity(i);
         Intent i = new Intent(this, actividadJugar_Tablero.class);
         startActivity(i);
+    }
+
+    public static boolean repetido(String[] array, String aleatorio) {
+        boolean repetido = false;
+        for(int i = 0; i < array.length; i++) {
+            if(array[i] == aleatorio){
+                repetido = true;
+                return repetido;
+            }
+        }
+        return repetido;
     }
 
 }

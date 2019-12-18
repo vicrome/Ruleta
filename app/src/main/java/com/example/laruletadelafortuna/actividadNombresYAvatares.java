@@ -144,6 +144,7 @@ public class actividadNombresYAvatares extends AppCompatActivity implements Adap
             at.setNombres(nombres);
             at.setnPlayers(nJugadores);
             at.setAvatares(avatares);
+            at.setnRondaActual(0);
             Intent i = new Intent(this, actividadJugar.class);
             startActivity(i);
         }

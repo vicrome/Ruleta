@@ -45,4 +45,76 @@
         <item>@drawable/av8</item>
         <item>@drawable/av9</item>
     </array>
+    <string-array name="frases">
+        <item>Los Beatles</item>
+        <item>Daddy Yankee</item>
+        <item>Wolfgang Amadeus Mozart</item>
+        <item>Michael Jackson</item>
+        <item>Louis Armstrong</item>
+        <item>Zinedine Zidaneg</item>
+        <item>Michael Phelps</item>
+        <item>Kobe Bryant</item>
+        <item>Rafa Nadal</item>
+        <item>Sebastian Vettel</item>
+        <item>Alfonso X</item>
+        <item>John F Kennedy</item>
+        <item>Francisco Franco</item>
+        <item>William Shakespeare</item>
+        <item>Aristoteles</item>
+        <item>El señor de los anillos</item>
+        <item>Maditos Bastardos</item>
+        <item>Pesadilla antes de navidad</item>
+        <item>Origen</item>
+        <item>El viaje de Chihiro</item>
+        <item>Stonehenge</item>
+        <item>Chichen Itza</item>
+        <item>Opera de Sídney</item>
+        <item>Estatua de la Libertad</item>
+        <item>Notre Dame</item>
+        <item>Hepatitis</item>
+        <item>Marie Curie</item>
+        <item>Insulina</item>
+        <item>Isaac Newton</item>
+        <item>Charles Darwin</item>
+    </string-array>
+    <string-array name="pistas">
+        <item>Los 4</item>
+        <item>The Big Boss</item>
+        <item>Maestro del clasicismo</item>
+        <item>Rey</item>
+        <item>Jazz</item>
+        <item>Exfutbolista</item>
+        <item>Agua</item>
+        <item>La mamba negra</item>
+        <item>ATP</item>
+        <item>Ferrari</item>
+        <item>El sabio</item>
+        <item>Asesinado</item>
+        <item>Dictador</item>
+        <item>El Bardo de Avon</item>
+        <item>Filosofo e influencer</item>
+        <item>Tierra Media</item>
+        <item>Alemania nazi</item>
+        <item>Halloween</item>
+        <item>¿Alguna vez has soñado que estabas soñando?</item>
+        <item>Studio Ghibli</item>
+        <item>Ruinas</item>
+        <item>Templo de Kukulkan</item>
+        <item>Australia</item>
+        <item>Americana pero no</item>
+        <item>La dama francesa</item>
+        <item>Ataca al higado</item>
+        <item>Nobel</item>
+        <item>Diabetes</item>
+        <item>Manzana</item>
+        <item>Evolucion</item>
+    </string-array>
+    <string-array name="categorias">
+        <item>Musica</item>
+        <item>Deportes</item>
+        <item>Historia</item>
+        <item>Peliculas</item>
+        <item>Viajes</item>
+        <item>Ciencia</item>
+    </string-array>
 </resources>

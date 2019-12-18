@@ -13,14 +13,12 @@
         <activity android:name=".actividadNombresYAvatares"></activity>
         <activity android:name=".actividadConfiguracion"></activity>
         <activity android:name=".actividadInformacion"></activity>
-        <activity android:name=".actividad_SeleccionNJugadores"></activity>
         <activity android:name=".actividadJugar"></activity>
         <activity android:name=".actividadJugar_Tablero"></activity>
         <activity android:name=".actividadGanar"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
-
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
